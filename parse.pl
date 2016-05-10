@@ -8,8 +8,8 @@ my %data = (
 	"/*[[canvas_domain]]*/"         => "canvas.sfu.ca"
 );
 
-open(my $in, '<', 'sfu-canvas-dark-userstyles.css') or die "Could not open file '$_' $!";
-open(my $out, '>', 'sfu-canvas-dark-stylish.css') or die "Could not open file '$_' $!";
+open(my $in, '<', 'canvas-dark-userstyles.css') or die "Could not open file '$_' $!";
+open(my $out, '>', 'canvas-dark-stylish.css') or die "Could not open file '$_' $!";
 
 while (my $line = readline($in))
 {
