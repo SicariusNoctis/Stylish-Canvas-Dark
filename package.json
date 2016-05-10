@@ -1,17 +1,17 @@
 {
   "name": "canvas-dark-stylish",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Canvas Dark theme for Stylish",
-  "homepage": "https://github.com/sicariusnoctis/canvas-dark-stylish",
+  "homepage": "https://github.com/SicariusNoctis/Stylish-Canvas-Dark",
   "contributors": [
     "sicariusnoctis <sicariusnoctisnxt@gmail.com>"
   ],
   "bugs": {
-    "url": "https://github.com/sicariusnoctis/canvas-dark-stylish/issues"
+    "url": "https://github.com/SicariusNoctis/Stylish-Canvas-Dark/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sicariusnoctis/canvas-dark-stylish.git"
+    "url": "https://github.com/SicariusNoctis/Stylish-Canvas-Dark.git"
   },
   "license": "GPL"
 }
