@@ -9,4 +9,4 @@
 
 ## Running
 
-1. Run parse.pl to generate "canvas-dark-stylish.css" using "canvas-dark-userstyles.css".
+1. Run update-stylish.pl to generate "canvas-dark-stylish.css" using "canvas-dark-userstyles.css".
