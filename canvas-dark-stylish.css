@@ -25,8 +25,8 @@
 @-moz-document domain("canvas.sfu.ca") {
 
   /* Basic style */
-  body, #wrapper-container
-  {
+
+  body, #wrapper-container {
     background-color: #222 !important;
   }
   
@@ -39,23 +39,42 @@
     border-color: #666 #666 #666 !important;
   }
   
-  #content
-  {
+  #content {
     color: #ddd !important;
     background-color: #333 !important;
   }
   
   #breadcrumbs {
-    background: #171717 !important;
-    border-bottom: 1px solid #444 !important;
+    background: #222 !important;
+    border-bottom: 0px solid #333 !important;
+  }
+
+  #breadcrumbs > ul > li + li:last-of-type a {
+    color: #666 !important;
   }
   
-  .header-bar
-  {
+  .header-bar {
     background: url('https://canvas.sfu.ca/sfu/images/clf-header-bg-rainbow.png') repeat scroll 0% 0% #6A7177;
   }
   
-  /* Sidebar */
+  .item-group-container {
+    color: #ddd !important;
+    background-color: #333 !important;
+  }
+
+  .item-group {
+    background: #222 !important;
+  }
+
+
+  /* Main Sidebar */
+
+  .ReactTray__Content {
+    background-color: #171717 !important;
+  }
+
+
+  /* Page Sidebar */
   
   .list-view > header,
   .list-view #section-tabs-header {
@@ -77,9 +96,17 @@
     border-bottom: 1px solid #555 !important;
   }
   
+  .list-view > ul > li > a:hover,
+  .list-view > ul > li > a:focus,
+  .list-view > nav > ul > li > a:hover,
+  .list-view > nav > ul > li > a:focus {
+    background-color: #555 !important;
+  }
+
   #left-side {
     border-bottom: 1px solid #777 !important;
   }
+
   
   /* Modules, homework */
   
@@ -88,14 +115,12 @@
     color: #eee !important;
   }
   
-  #section-tabs
-  {
+  #section-tabs {
     color: #eee !important;
     background-color: #444 !important;
   }
   
-  .table-bordered
-  {
+  .table-bordered {
     background: #444 !important;
   }
   
@@ -115,16 +140,43 @@
     background-color: #444 !important; 
   }
   
-  
+
+  /* Announcements */
+
+  .discussionTopicIndexList .discussion-topic:nth-child(2n+1) {
+    background-color: #222 !important;
+  }
+
+  .discussionTopicIndexList .discussion-topic {
+    background-color: #171717 !important;
+    border-top: 1px solid #353535 !important;
+  }
+
+  body.ff .discussionTopicIndexList .discussion-topic:nth-child(2n+1) .ellipsis::after {
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, #222 75%) !important;
+  }
+
+  body.ff .discussionTopicIndexList .discussion-topic .ellipsis::after {
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, #171717 75%) !important;
+  }
+
+  .discussionTopicIndexList .discussion-summary {
+    color: #999 !important;
+  }
+
+  .discussionTopicIndexList .discussion-unread-container,
+  .discussionTopicIndexList .discussion-last-reply,
+  .discussionTopicIndexList .discussion-info-icons {
+    color: #555 !important;
+  }
+
+
   /* Discussions */
+
   .discussion-collections {
     background: #222 !important;
   }
-  
-  .item-group {
-    background: #222 !important;
-  }
-  
+
   .discussion {
     background: #272727 !important;
     border: 1px solid #555 !important;
@@ -139,7 +191,8 @@
     color: #888 !important;
   }
   
-  .toolbarView {
+  .toolbarView,
+  .toolbarView .headerBar {
     background: #171717 !important;
   }
   
@@ -174,12 +227,23 @@
     color: #777 !important;
   }
   
+
+  /* Submission details */
+
+  .submission-details-comments .comments {
+    background-color: #222 !important;
+  }
+
+
   /* People > Everyone */
+  /* table-striped is from old canvas site */
+
   .ui-tabs .ui-tabs-panel {
     background: #333 !important;
   }
 
-  .table-striped, .table-striped > thead {
+  .table-striped,
+  .table-striped > thead {
     border: 1px solid #4F4F4F !important;
   }
 
@@ -187,15 +251,23 @@
     background-color: #222 !important;
   }
 
-  .table-striped tbody tr:nth-child(2n+1) td, .table-striped tbody tr:nth-child(2n+1) th {
-    background-color: #2A2A2A !important;
+  .ic-Table.ic-Table--striped tbody tr:nth-child(2n+1),
+  .table-striped tbody tr:nth-child(2n+1) td,
+  .table-striped tbody tr:nth-child(2n+1) th {
+    background-color: #222 !important;
   }
 
+  .ic-Table.ic-Table--striped tbody tr {
+    background-color: #171717 !important;
+  }
+  
   .table th, .table td {
     border-top: 1px solid #4F4F4F !important;
   }
 
+
   /* People > Groups table */
+
   .student-groups {
     border: 1px solid #222 !important;
   }
@@ -210,7 +282,34 @@
     color: #ccc !important;
   }
 
-  /* Grades table */  
+
+  /* Assignments */
+  .accessible-toggler {
+    color: #999 !important;
+  }
+
+  .item-group-condensed .ig-row {
+    background-color: #1f1f1f !important;
+    border-bottom: 1px solid #272727 !important;
+  }
+
+  .ig-list .ig-row a.ig-title {
+    color: #999 !important;
+  }
+
+  .ig-list .ig-row {
+    border: 1px solid #272727 !important;
+  }
+
+  .item-group-condensed .ig-list li:first-child .ig-row,
+  .item-group-condensed .ig-list li:first-of-type .ig-row,
+  .item-group-condensed .first_visible .ig-row {
+    border-top: 1px solid #272727 !important;
+  }
+
+
+  /* Grades table */
+
   #grades_summary tr > * {
     border-top: 2px solid #222 !important;
     background-color: #303030 !important;
@@ -224,18 +323,21 @@
   }
   
   /* Graded items */
+
   #grades_summary tr.assignment_graded > * {
     border-top: 2px solid #222 !important;
     background-color: #303030 !important;
     opacity: 1.0 !important;
   }
-  
+
   /* Right side table */
+
   #right-side table.summary td, #right-side table.summary tbody th {
     background-color: #272727 !important;
   }
   
   /* Gear button */
+
   .dim-till-hover {
     opacity: 0.7 !important;
   }
