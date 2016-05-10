@@ -2,24 +2,24 @@
 
 /* Login page */
 @-moz-document url-prefix("https://cas.sfu.ca/cas") {
-  
+
   #page-content {
     background-color: #333 !important;
     color: #ccc !important;
   }
-  
+
   header {
    background: #222 !important;
   }
-  
+
   .form-background {
     background-color: #333 !important;
   }
-  
+
   form {
     background-color: #333 !important;
   }
-  
+
 }
 
 @-moz-document domain("/*[[canvas_domain]]*/") {
@@ -29,21 +29,21 @@
   body, #wrapper-container {
     background-color: #222 !important;
   }
-  
+
   body, td, pre {
     color: #ccc !important;
   }
-  
+
   #main {
     background-color: #222 !important;
     border-color: #666 #666 #666 !important;
   }
-  
+
   #content {
     color: #ddd !important;
     background-color: #333 !important;
   }
-  
+
   #breadcrumbs {
     background: #222 !important;
     border-bottom: 0px solid #333 !important;
@@ -52,11 +52,11 @@
   #breadcrumbs > ul > li + li:last-of-type a {
     color: #666 !important;
   }
-  
+
   .header-bar {
     background: url('https://canvas.sfu.ca/sfu/images/clf-header-bg-rainbow.png') repeat scroll 0% 0% #6A7177;
   }
-  
+
   .item-group-container {
     color: #ddd !important;
     background-color: #333 !important;
@@ -64,6 +64,16 @@
 
   .item-group {
     background: #222 !important;
+  }
+
+
+  /* Dashboard */
+  .ic-DashboardCard__header_content {
+    background-color: #272727 !important;
+  }
+
+  .ic-DashboardCard__action-container {
+    background-color: #222 !important;
   }
 
 
@@ -75,7 +85,7 @@
 
 
   /* Page Sidebar */
-  
+
   .list-view > header,
   .list-view #section-tabs-header {
     background: #222 !important;
@@ -85,17 +95,17 @@
     border-bottom: 1px solid #666 !important;
     box-shadow: 0px 1px 0px #666 !important;
   }
-  
+
   .list-view a.active {
     background-color: #666 !important;
   }
-  
+
   .list-view > ul > li > a,
   .list-view > nav > ul > li > a {
     border-top: 1px solid #666 !important;
     border-bottom: 1px solid #555 !important;
   }
-  
+
   .list-view > ul > li > a:hover,
   .list-view > ul > li > a:focus,
   .list-view > nav > ul > li > a:hover,
@@ -107,39 +117,39 @@
     border-bottom: 1px solid #777 !important;
   }
 
-  
+
   /* Modules, homework */
-  
+
   .list-view > ul > li > a,
   .list-view > nav > ul > li > a {
     color: #eee !important;
   }
-  
+
   #section-tabs {
     color: #eee !important;
     background-color: #444 !important;
   }
-  
+
   .table-bordered {
     background: #444 !important;
   }
-  
+
   .table > thead {
     background: #555 !important;
   }
-  
+
   .quiz-submission, .question_editing {
     background: #333 !important;
   }
-  
+
   #questions.assessment_results .question .header {
     background-color: #383838 !important;
   }
-  
+
   .question {
-    background-color: #444 !important; 
+    background-color: #444 !important;
   }
-  
+
 
   /* Announcements */
 
@@ -181,52 +191,52 @@
     background: #272727 !important;
     border: 1px solid #555 !important;
   }
-  
+
   .ig-header, .ig-text {
     color: #ccc !important;
     text-shadow: 1px 1px 0px #444 !important;
   }
-  
+
   .discussion-list .title-help {
     color: #888 !important;
   }
-  
+
   .toolbarView,
   .toolbarView .headerBar {
     background: #171717 !important;
   }
-  
+
   .topic .entry-content {
     background: #272727 !important;
   }
-  
+
   .discussion_entry {
     background: #333 !important;
   }
-  
+
   .discussion-entries .entry {
     /* effects padding color */
     background: #333 !important;
     border: 1px solid #666 !important;
     box-shadow: 0px 1px 0px #444 !important;
   }
-  
+
   .entry > .bottom-reply-with-box .discussion-entry-reply-area {
     border-top: 1px solid #555 !important;
   }
-  
+
   .discussion-entry-reply-area {
     background: #333 !important;
   }
-  
+
   .discussion-reply-box {
     background: #272727 !important;
   }
-  
+
   .discussion-pubdate {
     color: #777 !important;
   }
-  
+
 
   /* Submission details */
 
@@ -260,7 +270,7 @@
   .ic-Table.ic-Table--striped tbody tr {
     background-color: #171717 !important;
   }
-  
+
   .table th, .table td {
     border-top: 1px solid #4F4F4F !important;
   }
@@ -315,13 +325,13 @@
     background-color: #303030 !important;
     opacity: 0.7;
   }
-  
+
   #grades_summary tr > *:hover {
     border-top: 2px solid #222 !important;
     background-color: #333 !important;
     opacity: 1.0;
   }
-  
+
   /* Graded items */
 
   #grades_summary tr.assignment_graded > * {
@@ -332,14 +342,95 @@
 
   /* Right side table */
 
-  #right-side table.summary td, #right-side table.summary tbody th {
+  #right-side {
+    background-color: #222 !important;
+    border: 0px solid #222 !important;
+  }
+
+  #right-side table.summary td,
+  #right-side table.summary tbody th {
     background-color: #272727 !important;
   }
-  
+
   /* Gear button */
 
   .dim-till-hover {
     opacity: 0.7 !important;
   }
-  
+
+  .Button--icon-action-rev:focus {
+      box-shadow: inset 0 0 0 0px #333;
+  }
+
+  /* Inbox */
+
+  .conversations .panel {
+    background-color: #222 !important;
+  }
+
+  .message-list .messages > li {
+    background-color: #272727 !important;
+    border-bottom: 1px solid #444 !important;
+  }
+
+  .message-list .messages > li.active,
+  .message-list .messages > li:hover {
+    background-color: #2c2c2d !important;
+  }
+
+  .message-actions .read-state {
+    background: #0096db !important; 
+    /* background: #555 !important; */
+  }
+
+
+  /* Calendar */
+
+  #calendar-app .fc-month-view .fc-body,
+  #calendar-drag-and-drop-container .fc-month-view .fc-body {
+    background-color: #222 !important;
+  }
+
+  #calendar-app .fc-state-highlight,
+  #calendar-drag-and-drop-container .fc-state-highlight {
+    background-color: #272727 !important;
+  }
+
+  #calendar-app .fc-event,
+  #calendar-drag-and-drop-container .fc-event {
+    background-color: #070707 !important;
+  }
+
+  .calendar .fc-widget-header,
+  .calendar .fc-widget-content,
+  #calendar-drag-and-drop-container .fc-widget-header,
+  #calendar-drag-and-drop-container .fc-widget-content {
+    border-color: #444 !important;
+  }
+
+  .calendar .fc-row .fc-content-skeleton td,
+  .calendar .fc-row .fc-helper-skeleton td,
+  #calendar-drag-and-drop-container .fc-row .fc-content-skeleton td,
+  #calendar-drag-and-drop-container .fc-row .fc-helper-skeleton td {
+    border-color: #444 !important;
+  }
+
+  #minical {
+    background-color: #111 !important;
+    border: 0px solid #111 !important;
+  }
+
+  #minical .fc-widget-content {
+    border: 1px solid #171717 !important;
+  }
+
+  #context-list-holder, #undated-events {
+    background-color: #171717 !important;
+    border: 1px solid #171717 !important;
+  }
+
+  #context-list .context_list_context:hover {
+    background-color: #222 !important;
+  }
+
 }
