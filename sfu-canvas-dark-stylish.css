@@ -1,0 +1,243 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+/* Login page */
+@-moz-document url-prefix("https://cas.sfu.ca/cas") {
+  
+  #page-content {
+    background-color: #333 !important;
+    color: #ccc !important;
+  }
+  
+  header {
+   background: #222 !important;
+  }
+  
+  .form-background {
+    background-color: #333 !important;
+  }
+  
+  form {
+    background-color: #333 !important;
+  }
+  
+}
+
+@-moz-document domain("canvas.sfu.ca") {
+
+  /* Basic style */
+  body, #wrapper-container
+  {
+    background-color: #222 !important;
+  }
+  
+  body, td, pre {
+    color: #ccc !important;
+  }
+  
+  #main {
+    background-color: #222 !important;
+    border-color: #666 #666 #666 !important;
+  }
+  
+  #content
+  {
+    color: #ddd !important;
+    background-color: #333 !important;
+  }
+  
+  #breadcrumbs {
+    background: #171717 !important;
+    border-bottom: 1px solid #444 !important;
+  }
+  
+  .header-bar
+  {
+    background: url('https://canvas.sfu.ca/sfu/images/clf-header-bg-rainbow.png') repeat scroll 0% 0% #6A7177;
+  }
+  
+  /* Sidebar */
+  
+  .list-view > header,
+  .list-view #section-tabs-header {
+    background: #222 !important;
+    background-image: none !important;
+    color: #aaa !important;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid #666 !important;
+    box-shadow: 0px 1px 0px #666 !important;
+  }
+  
+  .list-view a.active {
+    background-color: #666 !important;
+  }
+  
+  .list-view > ul > li > a,
+  .list-view > nav > ul > li > a {
+    border-top: 1px solid #666 !important;
+    border-bottom: 1px solid #555 !important;
+  }
+  
+  #left-side {
+    border-bottom: 1px solid #777 !important;
+  }
+  
+  /* Modules, homework */
+  
+  .list-view > ul > li > a,
+  .list-view > nav > ul > li > a {
+    color: #eee !important;
+  }
+  
+  #section-tabs
+  {
+    color: #eee !important;
+    background-color: #444 !important;
+  }
+  
+  .table-bordered
+  {
+    background: #444 !important;
+  }
+  
+  .table > thead {
+    background: #555 !important;
+  }
+  
+  .quiz-submission, .question_editing {
+    background: #333 !important;
+  }
+  
+  #questions.assessment_results .question .header {
+    background-color: #383838 !important;
+  }
+  
+  .question {
+    background-color: #444 !important; 
+  }
+  
+  
+  /* Discussions */
+  .discussion-collections {
+    background: #222 !important;
+  }
+  
+  .item-group {
+    background: #222 !important;
+  }
+  
+  .discussion {
+    background: #272727 !important;
+    border: 1px solid #555 !important;
+  }
+  
+  .ig-header, .ig-text {
+    color: #ccc !important;
+    text-shadow: 1px 1px 0px #444 !important;
+  }
+  
+  .discussion-list .title-help {
+    color: #888 !important;
+  }
+  
+  .toolbarView {
+    background: #171717 !important;
+  }
+  
+  .topic .entry-content {
+    background: #272727 !important;
+  }
+  
+  .discussion_entry {
+    background: #333 !important;
+  }
+  
+  .discussion-entries .entry {
+    /* effects padding color */
+    background: #333 !important;
+    border: 1px solid #666 !important;
+    box-shadow: 0px 1px 0px #444 !important;
+  }
+  
+  .entry > .bottom-reply-with-box .discussion-entry-reply-area {
+    border-top: 1px solid #555 !important;
+  }
+  
+  .discussion-entry-reply-area {
+    background: #333 !important;
+  }
+  
+  .discussion-reply-box {
+    background: #272727 !important;
+  }
+  
+  .discussion-pubdate {
+    color: #777 !important;
+  }
+  
+  /* People > Everyone */
+  .ui-tabs .ui-tabs-panel {
+    background: #333 !important;
+  }
+
+  .table-striped, .table-striped > thead {
+    border: 1px solid #4F4F4F !important;
+  }
+
+  .table-striped > tbody > tr td {
+    background-color: #222 !important;
+  }
+
+  .table-striped tbody tr:nth-child(2n+1) td, .table-striped tbody tr:nth-child(2n+1) th {
+    background-color: #2A2A2A !important;
+  }
+
+  .table th, .table td {
+    border-top: 1px solid #4F4F4F !important;
+  }
+
+  /* People > Groups table */
+  .student-groups {
+    border: 1px solid #222 !important;
+  }
+
+  .student-groups.show-body .student-group-header {
+    background-color: #272727 !important;
+    border-bottom: 1px solid #444444 !important;
+  }
+
+  .ui-widget-content {
+    background: #272727 !important;
+    color: #ccc !important;
+  }
+
+  /* Grades table */  
+  #grades_summary tr > * {
+    border-top: 2px solid #222 !important;
+    background-color: #303030 !important;
+    opacity: 0.7;
+  }
+  
+  #grades_summary tr > *:hover {
+    border-top: 2px solid #222 !important;
+    background-color: #333 !important;
+    opacity: 1.0;
+  }
+  
+  /* Graded items */
+  #grades_summary tr.assignment_graded > * {
+    border-top: 2px solid #222 !important;
+    background-color: #303030 !important;
+    opacity: 1.0 !important;
+  }
+  
+  /* Right side table */
+  #right-side table.summary td, #right-side table.summary tbody th {
+    background-color: #272727 !important;
+  }
+  
+  /* Gear button */
+  .dim-till-hover {
+    opacity: 0.7 !important;
+  }
+  
+}

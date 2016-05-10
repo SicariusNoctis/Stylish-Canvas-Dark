@@ -1,0 +1,17 @@
+{
+  "name": "sfu-canvas-dark-stylish",
+  "version": "1.0.0",
+  "description": "SFU Canvas Dark theme for Stylish",
+  "homepage": "https://github.com/sicariusnoctis/sfu-canvas-dark-stylish",
+  "contributors": [
+    "sicariusnoctis <sicariusnoctisnxt@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/sicariusnoctis/sfu-canvas-dark-stylish/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sicariusnoctis/sfu-canvas-dark-stylish.git"
+  },
+  "license": "GPL"
+}
