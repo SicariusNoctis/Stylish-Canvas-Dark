@@ -237,6 +237,12 @@
     color: #777 !important;
   }
 
+  .equation_image {
+    background: #fff !important;
+    filter: invert(100%) !important;
+    padding: 5px !important;
+  }
+
 
   /* Submission details */
 
@@ -379,7 +385,7 @@
   }
 
   .message-actions .read-state {
-    background: #0096db !important; 
+    background: #0096db !important;
     /* background: #555 !important; */
   }
 
