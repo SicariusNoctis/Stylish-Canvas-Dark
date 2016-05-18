@@ -39,6 +39,10 @@
     border-color: #666 #666 #666 !important;
   }
 
+  img:hover {
+     background-color: #fff !important;
+  }
+
   #content {
     color: #ddd !important;
     background-color: #333 !important;
