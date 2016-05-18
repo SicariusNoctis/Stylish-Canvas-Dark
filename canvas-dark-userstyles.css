@@ -150,6 +150,14 @@
     background-color: #383838 !important;
   }
 
+  .question .header {
+    background-color: #272727 !important;
+  }
+
+  #questions.assessing {
+    background-color: #333 !important;
+  }
+
   .question {
     background-color: #444 !important;
   }
