@@ -252,6 +252,7 @@
   .equation_image {
     background: #fff !important;
     filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;
     padding: 5px !important;
   }
 
